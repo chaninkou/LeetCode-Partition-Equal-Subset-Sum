@@ -9,7 +9,7 @@ public class CheckIfTwoSubsetEqualFunction {
             sum += i;
         }
         
-        // Since there is suppose to have two group of numbers equal to each other, it needs to be even number
+        // Required even sum since group of 2
         if(sum % 2 == 1){
             return false;
         }
@@ -29,6 +29,8 @@ public class CheckIfTwoSubsetEqualFunction {
             for(int i = sum; i > 0; i--){
                 if(i >= num){
                     dp[i] = (dp[i] || dp[i - num]); 
+                } else {
+                	break; // no need to continue
                 }
             }
             

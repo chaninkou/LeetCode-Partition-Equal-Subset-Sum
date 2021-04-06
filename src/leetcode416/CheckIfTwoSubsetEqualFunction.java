@@ -23,7 +23,7 @@ public class CheckIfTwoSubsetEqualFunction {
         // there is always a sum of 0
         dp[0] = true;
         
-        // Go through each given number
+        
         for(int num : nums){
         	// From each sum, mark all the possible sum to true
             for(int i = sum; i > 0; i--){

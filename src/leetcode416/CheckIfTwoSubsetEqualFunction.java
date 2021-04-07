@@ -4,7 +4,6 @@ public class CheckIfTwoSubsetEqualFunction {
     public boolean canPartition(int[] nums) {
     	// Add up all the numbers as sum
         int sum = 0;
-        
         for(int i : nums){
             sum += i;
         }
